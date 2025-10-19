@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.miniprojectuts"
+    namespace = "com.capekdev.projekuts"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.miniprojectuts"
+        applicationId = "com.capekdev.projekuts"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -16,8 +16,7 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-
-    buildFeatures {
+    buildFeatures{
         viewBinding = true
     }
     buildTypes {
@@ -45,6 +44,8 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.recyclerview)
+    implementation(libs.androidx.cardview)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

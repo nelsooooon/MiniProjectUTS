@@ -1,4 +1,4 @@
-package com.example.miniprojectuts
+package com.capekdev.projekuts
 
 import org.junit.Test
 
