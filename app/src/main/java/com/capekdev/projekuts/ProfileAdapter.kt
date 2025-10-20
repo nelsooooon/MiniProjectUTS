@@ -15,8 +15,8 @@ class ProfileAdapter(): RecyclerView.Adapter<ProfileAdapter.ProfileViewHolder>()
     override fun onBindViewHolder(holder: ProfileViewHolder, position: Int) {
         holder.binding.imgProfile.setImageResource(ProfileBank.profiles[position].imageId)
         holder.binding.txtNama.setText(ProfileBank.profiles[position].nama)
-        holder.binding.txtNRP.setText(ProfileBank.profiles[position].nrp)
-        holder.binding.txtProgram.setText(ProfileBank.profiles[position].program)
+        holder.binding.txtNRP.setText("NRP " + ProfileBank.profiles[position].nrp)
+        holder.binding.txtProgram.setText("Program " + ProfileBank.profiles[position].program)
         holder.binding.cardProfile.setOnClickListener {
             val intent = Intent(holder.itemView.context, DetailProfile::class.java)
             intent.putExtra("profileIndex", position)
