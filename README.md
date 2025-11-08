@@ -1,2 +1,2 @@
 # MiniProjectUTS
-Project yang dibuat untuk mata kuliah Native Mobile Programming
+Mini project for mid-term exam of Native Mobile Programming subject.
